@@ -8,4 +8,5 @@
     <entry key='database.password'></entry>
     <entry key='logger.level'>info</entry>
     <entry key='logger.file'>logs/tracker-server.log</entry>
+    <entry key='web.origin'>*</entry>
 </properties>
