@@ -10,4 +10,6 @@
     <entry key='logger.file'>logs/tracker-server.log</entry>
     <entry key='web.allowAnonymous'>true</entry> 
     <entry key='web.origin'>https://www.galatsi.gov.gr/</entry>
+    <entry key='map.enable'>true</entry>
+    <entry key='map.anonymous'>true</entry>
 </properties>
