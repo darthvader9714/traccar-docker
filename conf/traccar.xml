@@ -9,4 +9,6 @@
     <entry key='logger.level'>info</entry>
     <entry key='logger.file'>logs/tracker-server.log</entry>
     <entry key='web.origin'>*</entry>
+    <entry key='web.allowAnonymous'>true</entry> 
+    <entry key='web.origin'>https://www.galatsi.gr</entry>
 </properties>
