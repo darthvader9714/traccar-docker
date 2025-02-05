@@ -23,4 +23,4 @@ COPY conf/traccar.xml /opt/traccar/conf/traccar.xml
 
 ENTRYPOINT ["java", "-Xms1g", "-Xmx1g", "-Djava.net.preferIPv4Stack=true"]
 
-CMD ["java", "-Dtraccar.config=/opt/traccar/conf/traccar.xml", "-Dserver.port=8082", "-jar", "tracker-server.jar"]
+CMD ["java", "-Dserver.address=0.0.0.0", "-Dserver.port=8082", "-Dtraccar.config=/opt/traccar/conf/traccar.xml", "-jar", "tracker-server.jar"]
