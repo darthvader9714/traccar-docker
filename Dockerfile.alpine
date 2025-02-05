@@ -16,7 +16,9 @@ RUN set -ex; \
 # Explicitly expose the Traccar port so Render can detect it
 EXPOSE 8082
 
+# Copy the missing configuration file
+COPY conf/traccar.xml /opt/traccar/conf/traccar.xml
+
 ENTRYPOINT ["java", "-Xms1g", "-Xmx1g", "-Djava.net.preferIPv4Stack=true"]
 
-CMD ["java", "-Dtraccar.config=conf/traccar.xml", "-Dserver.port=8082", "-jar", "tracker-server.jar"]
-
+CMD ["java", "-Dtraccar.config=/opt/traccar/conf/traccar.xml", "-Dserver.port=8082", "-jar", "tracker-server.jar"]
